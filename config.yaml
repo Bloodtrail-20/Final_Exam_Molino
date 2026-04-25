@@ -1,0 +1,14 @@
+apache:
+  container_name: my-apache
+  image: httpd:latest
+  port: 8181
+
+monitoring_prometheus:
+  container_name: prometheus
+  image: prom/prometheus:latest
+  port: 9090
+
+monitoring_grafana:
+  container_name: grafana
+  image: grafana/grafana:latest
+  port: 3000

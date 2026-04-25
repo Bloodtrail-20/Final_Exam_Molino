@@ -1,0 +1,5 @@
+---
+- name: Change MOTD
+  ansible.builtin.copy:
+    dest: /etc/motd
+    content: "Ansible Managed by {{ ansible_user }}\n"
